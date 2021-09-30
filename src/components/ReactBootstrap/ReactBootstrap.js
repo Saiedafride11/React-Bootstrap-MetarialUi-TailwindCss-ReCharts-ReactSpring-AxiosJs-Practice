@@ -14,12 +14,12 @@ const ReactBootstrap = () => {
         <div>
             <h1>React Bootstrap Practice</h1>
             <br />
-            { news.length === 0 ?
+            { news?.length === 0 ?
                 <Spinner animation="border" />
                 :
                 <Row xs={1} md={3} className="g-4">
                     {
-                    news.map(nw => <News new={nw}></News>)
+                    news?.map(nw => <News new={nw}></News>)
                     }
                 </Row>
             }
